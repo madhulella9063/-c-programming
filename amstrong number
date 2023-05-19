@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<mathhh>
+int main()
+{
+int num, temp, remainder, times=0, sum=0;
+printf("\n enter the number to check \n");
+scanf("%d", &num);
+temp=num;
+while(temp!=0)
+{
+times=times+1;
+temp=temp/10;
+}
+temp=num;
+while(temp>0)
+{
+remainder=temp%10;
+sum=sum+pow(remainder, times);
+temp=temp/10;
+}
+printf("\n sum of entered number is=%d\n", sum);
+if(num==sum)
+printf("\n %d is amstrong number.\n", num);
+else
+printf("\n %d is not.\n", num);
+return 0;
+}
