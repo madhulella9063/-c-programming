@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    float pamount, roi, time_period, si;
+    printf("\n enter the principal amount:\n");
+    scanf("%f", &pamount);
+    printf("enter rate of interest:\n");
+    scanf("%f", &roi);
+    printf("enter the time period in years:\n");
+    scanf("%f", &time_period);
+    si=(pamount*roi*time_period)/100;
+    printf("\n simple interest for pamount %.2f = %.2f", pamount, si);
+    return 0;
+}
