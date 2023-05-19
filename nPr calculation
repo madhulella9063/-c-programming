@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int numFactorial(int Number)
+{ 
+  if (Number == 0 || Number == 1)  
+    return 1;
+  else
+    return Number * numFactorial (Number -1);
+}
+
+int main()
+{
+    int n, r, Result;
+    
+    printf("Enter the Number to calculate  = ");
+    scanf("%d",&n);
+
+    printf("Enter the r value to calculate = ");
+    scanf("%d",&r);
+
+    Result = numFactorial(n)/ numFactorial(n - r);
+
+    printf("The Final Result = %d\n", Result);
+    
+    return 0;
+}
