@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   
+    int num;
+    
+    printf("Enter Number to find Absolute Value = ");
+    scanf("%d",&num);
+
+    int abNum = abs(num);
+
+    printf("\nActual Number   = %d", num); 
+    printf("\nAbsolute Number = %d\n", abNum);
+}
